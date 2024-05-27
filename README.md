@@ -2,7 +2,7 @@
 
 This is a template for creating a portfolio with Tailwind CSS and Next.js.
 
-[sample](canvas.png)
+![sample](canvas.png)
 
 ## How it works
 
