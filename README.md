@@ -2,6 +2,8 @@
 
 This is a template for creating a portfolio with Tailwind CSS and Next.js.
 
+[sample](canvas.png)
+
 ## How it works
 
 Fork or download the repo and change whatever you need to change for your needs.
