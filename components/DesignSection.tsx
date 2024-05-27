@@ -7,14 +7,9 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const designs = [
   {
-    name: "UtahSec #1",
+    name: "UtahSec",
     description: "A logo for University of Utah's cybersecurity club.",
     image: "/utahsec1.png",
-  },
-  {
-    name: "UtahSec #2",
-    description: "Another logo for University of Utah's cybersecurity club.",
-    image: "/utahsec2.png",
   },
   {
     name: "CTF Team",
