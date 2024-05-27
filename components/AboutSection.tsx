@@ -67,7 +67,7 @@ const AboutSection = () => {
             I thrive on learning new things and constantly expanding my knowledge. 
             I have a keen eye for design and detail, which drives me to create 
             visually appealing and user-friendly applications.
-            I'm always looking for ways to improve, both personally and professionally, 
+            I am always looking for ways to improve, both personally and professionally, 
             embracing every challenge as an opportunity to grow.
             </p>
             <br />
@@ -78,7 +78,7 @@ const AboutSection = () => {
               </span>{" "}
               and that&#39;s what I aim for. With a deep passion for
               technology and an eagerness to expand the boundaries of possibility,
-              I'm excited about the future of my career 
+              I&apos;m excited about the future of my career 
               and am always on the lookout for new and exciting opportunities. 🙂
             </p>
           </div>
