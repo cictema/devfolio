@@ -25,7 +25,7 @@ const HeroSection = () => {
             <span className="font-semibold">
               Software Engineer{" "} 
             </span>
-            based in Salt Lake City, UT. Working towards Working towards building software that empowers and inspires users.
+            based in Salt Lake City, UT. Working towards building software that empowers and inspires users.
           </p>
           <Link
             to="projects"
