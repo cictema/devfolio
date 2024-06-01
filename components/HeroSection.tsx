@@ -3,7 +3,12 @@ import React from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
-
+import {
+  AiOutlineGithub,
+  AiOutlineTwitter,
+  AiOutlineLinkedin,
+  AiOutlineYoutube,
+} from "react-icons/ai"
 const HeroSection = () => {
   return (
     <section id="home">
@@ -17,7 +22,7 @@ const HeroSection = () => {
             className="rounded-full shadow-2xl"
           />
         </div>
-        <div className="md:mt-2 md:w-3/5">
+        <div className="md:mt-2 md:w-3/5 prose-invert text-white">
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl text-white">hi, i&#39;m</h1>
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 bg-clip-text text-7xl text-transparent background-animate">shubham!</h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl text-white`">
@@ -27,17 +32,30 @@ const HeroSection = () => {
             </span>
             based in Salt Lake City, UT. working towards building software that empowers and inspires users.
           </p>
-          <Link
-            to="projects"
-            className="font-bold prose px-6 py-3 bg-blue-200 rounded shadow hover:bg-teal-500"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            Projects
-          </Link>
+          <div className="space-x-2">
+            <Link
+              to="projects"
+              className="font-bold prose prose-slate px-6 py-3 rounded shadow bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Projects
+            </Link>
+            <button className="px-6 py-2 rounded shadow bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
+              <a className="font-bold prose prose-slate" href="https://github.com/sansquoi" rel="noreferrer" target="_blank">
+               Github
+              </a>
+            </button>
+            <button className="px-6 py-2 rounded shadow bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
+              <a className="font-bold prose prose-slate" href="https://www.linkedin.com/in/mazumders/" rel="noreferrer" target="_blank">
+                LinkedIn
+              </a>
+            </button>
+           
+          </div>
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">
@@ -51,6 +69,7 @@ const HeroSection = () => {
         >
           <HiArrowDown size={35} className="animate-bounce" />
         </Link>
+        
       </div>
     </section>
   )

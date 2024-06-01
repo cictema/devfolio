@@ -26,12 +26,11 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/mazumders/"
             rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineLinkedin
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-100"
-              size={30}
-            />
+            target="_blank">
+              <AiOutlineLinkedin
+                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-100"
+                size={30}
+              />
           </a>
           
         </div>

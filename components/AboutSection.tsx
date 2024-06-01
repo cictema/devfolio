@@ -44,48 +44,48 @@ const AboutSection = () => {
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
           <div className="md:w-1/2 ">
-            <h1 className="text-center text-3xl font-bold mb-6 md:text-left bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent">
+            <h1 className="text-center text-3xl font-bold mb-6 md:text-left bg-gradient-to-tr from-red-300 to-teal-500 bg-clip-text text-transparent">
               Get to know me!
             </h1>
-            <div className="text-xl prose-invert prose-code:text-white prose-slate">
-            <p>
-              Hi, my name is Shubham and I am a{" "}
-              <span className="font-bold">{"highly ambitious"}</span>,
-              <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
-              based in Salt Lake City, UT.
-            </p>
-            <br />
-            <p>
-            I graduated from the University of Utah in 2024 with an MS in Computer Science, 
-            where I had the privilege of working as a Research Assistant under 
-            Prof. Mu Zhang, focusing on Computer Security. 
-            Before that, I spent around 4 years honing my skills as a Full Stack Software Developer.
+            <div className="text-xl prose-invert bg-gradient-to-t from-red-300 to-teal-400 bg-clip-text text-transparent background-animate">
+              <p>
+                Hi, my name is Shubham and I am a{" "}
+                <span className="font-bold">{"highly ambitious"}</span>,
+                <span className="font-bold">{" self-motivated"}</span>, and
+                <span className="font-bold">{" driven"}</span> software engineer
+                based in Salt Lake City, UT.
+              </p>
+              <br />
+              <p>
+              I graduated from the University of Utah in 2024 with an MS in Computer Science, 
+              where I had the privilege of working as a Research Assistant under 
+              Prof. Mu Zhang, focusing on Computer Security. 
+              Before that, I spent around 4 years honing my skills as a Full Stack Software Developer.
 
-            </p>
-            <br />
-            <p>
-            I thrive on learning new things and constantly expanding my knowledge. 
-            I have a keen eye for design and detail, which drives me to create 
-            visually appealing and user-friendly applications.
-            I am always looking for ways to improve, both personally and professionally, 
-            embracing every challenge as an opportunity to grow.
-            </p>
-            <br />
-            <p>
-              My personal motto is to always {" "}
-              <span className="font-bold text-teal-500">
-                strive for continous improvement
-              </span>{" "}
-              and that&#39;s what I aim for. With a deep passion for
-              technology and an eagerness to expand the boundaries of possibility,
-              I&apos;m excited about the future of my career 
-              and am always on the lookout for new and exciting opportunities. 🙂
-            </p>
+              </p>
+              <br />
+              <p>
+              I thrive on learning new things and constantly expanding my knowledge. 
+              I have a keen eye for design and detail, which drives me to create 
+              visually appealing and user-friendly applications.
+              I am always looking for ways to improve, both personally and professionally, 
+              embracing every challenge as an opportunity to grow.
+              </p>
+              <br />
+              <p>
+                My personal motto is to always {" "}
+                <span className="font-bold bg-gradient-to-r from-green-200 to-blue-200 bg-clip-text text-transparent">
+                  strive for continous improvement
+                </span>{" "}
+                and that&#39;s what I aim for. With a deep passion for
+                technology and an eagerness to expand the boundaries of possibility,
+                I&apos;m excited about the future of my career 
+                and am always on the lookout for new and exciting opportunities. 🙂
+              </p>
             </div>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
-            <h1 className="text-3xl font-bold mb-6 bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent">My Skills</h1>
+            <h1 className="text-3xl font-bold mb-6 bg-gradient-to-tr from-red-300 to-teal-500 bg-clip-text text-transparent">My Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
