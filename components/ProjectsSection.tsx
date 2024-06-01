@@ -38,7 +38,7 @@ const ProjectsSection = () => {
         ./projects
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
-
+      
       <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => {
           return (
@@ -61,11 +61,11 @@ const ProjectsSection = () => {
                     <p className="text-xl leading-7 mb-4 text-blue-100 ">
                       {project.description}
                     </p>
-                    <div className="flex flex-row align-bottom space-x-4">
+                    <div className="flex flex-row align-bottom space-x-4 fill-white">
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          className="hover:-translate-y-1 transition-transform cursor-pointer fill-white"
                         />
                       </Link>
                       {/* <Link href={project.link} target="_blank">
