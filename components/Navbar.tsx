@@ -26,7 +26,7 @@ const NAV_ITEMS: Array<NavItem> = [
     page: "projects",
   },
   {
-    label: "Designs",
+    label: "Design",
     page: "designs"
   }
 ]
@@ -37,8 +37,8 @@ export default function Navbar() {
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-black">
-      <div className="justify-between md:items-center md:flex dark:bg-gradient-to-r from-red-600 via-yellow-500 to-indigo-400 text-2xl bg-clip-text text-transparent">
+    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-gradient-to-r from-neutral-900 via-neutral-950 to-neutral-900 ">
+      <div className="justify-between md:items-center md:flex bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 text-2xl bg-clip-text text-transparent">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home">
@@ -86,16 +86,16 @@ export default function Navbar() {
               {/* {currentTheme === "dark" ? (
                 <button
                   onClick={() => setTheme("light")}
-                  className="bg-slate-100 p-2 rounded-xl"
+                  className="bg-white p-4 rounded-xl"
                 >
-                  <RiSunLine size={25} color="black" />
+                  <RiSunLine size={25} color="red" />
                 </button>
               ) : (
                 <button
                   onClick={() => setTheme("dark")}
-                  className="bg-slate-100 p-2 rounded-xl"
+                  className="bg-slate-300 p-4 rounded-xl"
                 >
-                  <RiMoonFill size={25} />
+                  <RiSunLine size={25} color="black" />
                 </button>
               )} */}
             </div>

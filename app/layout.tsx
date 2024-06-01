@@ -16,12 +16,14 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="dark:bg-gradient-to-r from-sky-950 via-red-950 to-sky-950">
-        <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
+      {/* <body className="bg-gradient-to-r from-blue-950 via-amber-950 to-blue-950">       */}
+      <body className="bg-gradient-to-r from-blue-950 via-cyan-950 to-blue-950">    
+          <ThemeProvider enableSystem={true} attribute="class">          
+            <Navbar />
+            {children}
+            <Footer />            
+          </ThemeProvider>
+        
       </body>
     </html>
   )
