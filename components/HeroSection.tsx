@@ -20,7 +20,7 @@ const HeroSection = () => {
         <div className="md:mt-2 md:w-3/5">
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl text-white">hi, i&#39;m</h1>
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 bg-clip-text text-7xl text-transparent background-animate">shubham!</h1>
-          <p className="text-lg mt-4 mb-6 md:text-2xl">
+          <p className="text-lg mt-4 mb-6 md:text-2xl text-white`">
             i&#39;m a{" "}
             <span className="font-semibold">
               software engineer{" "} 
@@ -29,7 +29,7 @@ const HeroSection = () => {
           </p>
           <Link
             to="projects"
-            className="text-white font-semibold px-6 py-3 bg-teal-700 rounded shadow hover:bg-teal-500"
+            className="text-black text-xl font-semibold px-6 py-3 bg-blue-200 rounded shadow hover:bg-teal-500"
             activeClass="active"
             spy={true}
             smooth={true}

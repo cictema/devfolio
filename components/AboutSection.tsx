@@ -47,7 +47,7 @@ const AboutSection = () => {
             <h1 className="text-center text-3xl font-bold mb-6 md:text-left bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent">
               Get to know me!
             </h1>
-            <div className="text-xl">
+            <div className="text-xl text-white">
             <p>
               Hi, my name is Shubham and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,

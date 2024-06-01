@@ -43,8 +43,8 @@ const DesignSection = () => {
                       />
                   </div>
                   <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-slate-300 via-blue-200 to-slate-300 bg-clip-text text-6xl text-transparent background-animate">{design.name}</h1>
-                    <p className="text-xl leading-7 mb-4 bg-gradient-to-r from-slate-400 via-red-300 to-teal-600 bg-clip-text text-2xl text-transparent">
+                    <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-red-300 via-blue-200 to-teal-600 bg-clip-text text-6xl text-transparent background-animate">{design.name}</h1>
+                    <p className="text-xl leading-7 mb-4 text-blue-100">
                       {design.description}
                     </p>
                     
