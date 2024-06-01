@@ -44,9 +44,10 @@ const AboutSection = () => {
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
           <div className="md:w-1/2 ">
-            <h1 className="text-center text-3xl font-bold mb-6 md:text-left bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-5xl text-transparent">
+            <h1 className="text-center text-3xl font-bold mb-6 md:text-left bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent">
               Get to know me!
             </h1>
+            <div className="text-xl">
             <p>
               Hi, my name is Shubham and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
@@ -81,9 +82,10 @@ const AboutSection = () => {
               I&apos;m excited about the future of my career 
               and am always on the lookout for new and exciting opportunities. 🙂
             </p>
+            </div>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
-            <h1 className="text-3xl font-bold mb-6 bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-5xl text-transparent">My Skills</h1>
+            <h1 className="text-3xl font-bold mb-6 bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent">My Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (

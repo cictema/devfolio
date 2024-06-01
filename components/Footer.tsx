@@ -12,13 +12,13 @@ const Footer = () => {
     <footer className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl ">
       <hr className="w-full h-0.5 mx-auto mt-8 bg-teal-200 border-0"></hr>
       <div className="mx-auto  p-4 flex flex-col text-center text-neutral-900 md:flex-row md:justify-between">
-        <div className="flex flex-row items-center justify-center space-x-1 text-neutral-500  dark:bg-gradient-to-r from-red-600 via-yellow-500 to-indigo-400 text-2xl bg-clip-text text-transparent font-bold">
+        <div className="flex flex-row items-center justify-center space-x-1 bg-gradient-to-r from-red-600 via-yellow-500 to-indigo-400 text-xl bg-clip-text text-transparent font-bold">
           © 2024 Shubham Mazumder<a href="/" className="hover:underline"></a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
           <a href="https://github.com/sansquoi" rel="noreferrer" target="_blank">
             <AiOutlineGithub
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-100"
               size={30}
             />
           </a>
@@ -29,7 +29,7 @@ const Footer = () => {
             target="_blank"
           >
             <AiOutlineLinkedin
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-100"
               size={30}
             />
           </a>
