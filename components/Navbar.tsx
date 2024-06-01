@@ -14,19 +14,19 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Home",
+    label: "./home",
     page: "home",
   },
   {
-    label: "About",
+    label: "./about",
     page: "about",
   },
   {
-    label: "Projects",
+    label: "./projects",
     page: "projects",
   },
   {
-    label: "Design",
+    label: "./design",
     page: "designs"
   }
 ]
@@ -48,7 +48,7 @@ export default function Navbar() {
             </Link>
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border hover:animate-ping"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}

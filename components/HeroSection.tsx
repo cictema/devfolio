@@ -18,18 +18,18 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">Hi, I&#39;m</h1>
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl bg-gradient-to-r from-rose-500 via-amber-550 to-yellow-500 bg-clip-text text-7xl text-transparent background-animate">Shubham!</h1>
+          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">hi, i&#39;m</h1>
+          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 bg-clip-text text-7xl text-transparent background-animate">shubham!</h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            I&#39;m a{" "}
+            i&#39;m a{" "}
             <span className="font-semibold">
-              Software Engineer{" "} 
+              software engineer{" "} 
             </span>
-            based in Salt Lake City, UT. Working towards building software that empowers and inspires users.
+            based in Salt Lake City, UT. working towards building software that empowers and inspires users.
           </p>
           <Link
             to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+            className="text-white font-semibold px-6 py-3 bg-blue-950 rounded shadow hover:bg-blue-800"
             activeClass="active"
             spy={true}
             smooth={true}

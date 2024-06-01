@@ -34,8 +34,8 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
-      <h1 className="my-10 text-center font-bold text-4xl">
-        Projects
+      <h1 className="my-10 text-center font-bold text-4xl bg-gradient-to-r from-slate-100 to-blue-200  bg-clip-text text-5xl text-transparent background-animatet">
+        ./projects
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
 
@@ -57,8 +57,8 @@ const ProjectsSection = () => {
                     </Link>
                   </div>
                   <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                    <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r  from-teal-300 via-blue-200 to-teal-600 bg-clip-text text-6xl text-transparent background-animate">{project.name}</h1>
+                    <p className="text-xl leading-7 mb-4 bg-gradient-to-r from-slate-400 via-red-300 to-teal-600 bg-clip-text text-2xl text-transparent">
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
