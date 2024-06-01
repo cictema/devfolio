@@ -47,7 +47,7 @@ const AboutSection = () => {
             <h1 className="text-center text-3xl font-bold mb-6 md:text-left bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent">
               Get to know me!
             </h1>
-            <div className="text-xl text-white">
+            <div className="text-xl prose-invert prose-code:text-white prose-slate">
             <p>
               Hi, my name is Shubham and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
@@ -91,7 +91,7 @@ const AboutSection = () => {
                 return (
                   <p
                     key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-700 rounded font-bold prose-invert"
                   >
                     {item.skill}
                   </p>

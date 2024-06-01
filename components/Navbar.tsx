@@ -43,12 +43,12 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-4xl font-bold">Sm.</h2>
+                <h2 className="text-4xl font-bold hover:rotate-180">Sm.</h2>
               </div>
             </Link>
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border hover:animate-ping"
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
@@ -70,7 +70,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "text-4xl font-bold"
+                      "text-4xl font-bold  hover:-translate-y-2"
                     }
                     activeClass="active"
                     spy={true}
