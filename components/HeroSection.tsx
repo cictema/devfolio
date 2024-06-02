@@ -35,7 +35,7 @@ const HeroSection = () => {
           <div className="space-x-2">
             <Link
               to="projects"
-              className="font-bold prose prose-slate px-6 py-3 rounded shadow bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+              className="font-bold prose-invert px-8 py-2.5 rounded shadow bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 hover:from-pink-500 hover:to-yellow-500"
               activeClass="active"
               spy={true}
               smooth={true}
@@ -44,13 +44,13 @@ const HeroSection = () => {
             >
               Projects
             </Link>
-            <button className="px-6 py-2 rounded shadow bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
-              <a className="font-bold prose prose-slate" href="https://github.com/sansquoi" rel="noreferrer" target="_blank">
+            <button className="font-bold prose-invert px-8 py-2 rounded shadow bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 hover:from-pink-500 hover:to-yellow-500">
+              <a className="" href="https://github.com/sansquoi" rel="noreferrer" target="_blank">
                Github
               </a>
             </button>
-            <button className="px-6 py-2 rounded shadow bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
-              <a className="font-bold prose prose-slate" href="https://www.linkedin.com/in/mazumders/" rel="noreferrer" target="_blank">
+            <button className="font-bold prose-invert px-8 py-2 rounded shadow bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 hover:from-pink-500 hover:to-yellow-500">
+              <a className="" href="https://www.linkedin.com/in/mazumders/" rel="noreferrer" target="_blank">
                 LinkedIn
               </a>
             </button>
@@ -67,7 +67,7 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
-          <HiArrowDown size={35} className="animate-bounce " />
+          <HiArrowDown size={35} className="animate-bounce fill-white" />
         </Link>
         
       </div>

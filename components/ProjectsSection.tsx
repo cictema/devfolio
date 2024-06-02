@@ -30,59 +30,81 @@ const projects = [
   },
 ]
 
+const items = [
+  {
+    id: 1,
+    src: 'https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    link: 'link here',
+  },
+  {
+    id: 2,
+    src: 'https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    link: 'link here',
+  },
+  {
+    id: 3,
+    src: 'https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    link: 'link here',
+  },
+  {
+    id: 4,
+    src: 'https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    link: 'link here',
+  },
+  {
+    id: 5,
+    src: 'https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    link: 'link here',
+  },
+]
+
 const ProjectsSection = () => {
   return (
     <section id="projects">
-      <div className="my-12 pb-12 md:pt-16 md:pb-48">
-      <h1 className="my-10 text-center font-bold text-4xl text-white">
-        ./projects
-        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
-      </h1>
+      <div className="my-12 pb-12 ">
+        <h1 className="my-10 text-center font-bold text-4xl text-white">
+          ./projects
+          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+        </h1>
       
-      <div className="flex flex-col space-y-28">
-        {projects.map((project, idx) => {
-          return (
-            <div key={idx}>
-              <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                  <div className=" md:w-1/2">
-                    <Link href={project.github}>
-                      <Image
-                        src={project.image}
-                        alt=""                        
-                        width={1000}
-                        height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-70 border-solid border-2 border-zinc-950"
-                      />
-                    </Link>
-                  </div>
-                  <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6 bg-gradient-to-tr from-red-300 via-blue-200 to-teal-600 bg-clip-text text-6xl text-transparent">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-4 text-blue-100 ">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-row align-bottom space-x-4 fill-white">
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer fill-white"
-                        />
-                      </Link>
-                      {/* <Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link> */}
+        <div className="">
+          <div className=" flex flex-row gap-4 flex-wrap justify-center">
+            {projects.map((project, idx) => {
+              return (   
+                    <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                      <div className="">
+                          <Link href={project.github}>
+                            <Image
+                              src={project.image}
+                              alt=""                        
+                              width={1000}
+                              height={1000}
+                              className="rounded-xl shadow-xl hover:opacity-70 shadow-2xl"
+                            />
+                          </Link>
+                        </div>
+                        <div className="mt-8">
+                        <h1 className="text-2xl font-bold mb-6 bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 bg-clip-text text-transparent">{project.name}</h1>
+                        <div className="fill-black  mb-6 ">
+                            <Link href={project.github} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank">                              
+                              <p className=""> Github</p> 
+                              <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              </svg>
+                            </Link>                            
+                          </div>
+                          
+                          <p className="text-xl leading-7 mb-4 bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 bg-clip-text text-transparent ">
+                            {project.description}
+                          </p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </SlideUp>
-            </div>
-          )
-        })}
-        
-      </div>
+                
+              )
+            })}
+            
+          </div>
+        </div>
       </div>
     </section>
   )

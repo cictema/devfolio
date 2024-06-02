@@ -44,10 +44,10 @@ const AboutSection = () => {
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
           <div className="md:w-1/2 ">
-            <h1 className="text-center text-3xl font-bold mb-6 md:text-left bg-gradient-to-tr from-red-300 to-teal-500 bg-clip-text text-transparent">
+            <h1 className="text-center text-3xl font-bold mb-6 md:text-left text-zinc-200">
               Get to know me!
             </h1>
-            <div className="text-xl prose-invert bg-gradient-to-t from-red-300 to-teal-400 bg-clip-text text-transparent background-animate">
+            <div className="text-xl prose-invert bg-gradient-to-tr from-red-400 via-blue-200 to-teal-400 bg-clip-text text-transparent background-animate">
               <p>
                 Hi, my name is Shubham and I am a{" "}
                 <span className="font-bold">{"highly ambitious"}</span>,
@@ -74,7 +74,7 @@ const AboutSection = () => {
               <br />
               <p>
                 My personal motto is to always {" "}
-                <span className="font-bold bg-gradient-to-r from-green-200 to-blue-200 bg-clip-text text-transparent">
+                <span className="text-white">
                   strive for continous improvement
                 </span>{" "}
                 and that&#39;s what I aim for. With a deep passion for
@@ -85,7 +85,7 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
-            <h1 className="text-3xl font-bold mb-6 bg-gradient-to-tr from-red-300 to-teal-500 bg-clip-text text-transparent">My Skills</h1>
+            <h1 className="text-3xl font-bold mb-6 text-zinc-200">My Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
