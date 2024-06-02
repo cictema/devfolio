@@ -30,34 +30,6 @@ const projects = [
   },
 ]
 
-const items = [
-  {
-    id: 1,
-    src: 'https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    link: 'link here',
-  },
-  {
-    id: 2,
-    src: 'https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    link: 'link here',
-  },
-  {
-    id: 3,
-    src: 'https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    link: 'link here',
-  },
-  {
-    id: 4,
-    src: 'https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    link: 'link here',
-  },
-  {
-    id: 5,
-    src: 'https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    link: 'link here',
-  },
-]
-
 const ProjectsSection = () => {
   return (
     <section id="projects">
@@ -71,7 +43,7 @@ const ProjectsSection = () => {
           <div className="flex flex-row gap-4 flex-wrap justify-center">
             {projects.map((project, idx) => {
               return (   
-                    <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow bg-white">
                       <div className="">
                           <Link href={project.github}>
                             <Image

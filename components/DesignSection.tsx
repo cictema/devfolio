@@ -30,7 +30,7 @@ const DesignSection = () => {
       <div className="flex flex-row gap-4 flex-wrap justify-center">
         {designs.map((design, idx) => {
           return (
-            <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow bg-white">
               <div className="">
                     <Image
                       src={design.image}
