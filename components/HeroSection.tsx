@@ -24,7 +24,7 @@ const HeroSection = () => {
         </div>
         <div className="md:mt-2 md:w-3/5 prose-invert text-white">
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl text-white">hi, i&#39;m</h1>
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 bg-clip-text text-7xl text-transparent background-animate">shubham!</h1>
+          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 bg-clip-text text-7xl text-transparent background-animate hover:invert">shubham!</h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl text-white`">
             i&#39;m a{" "}
             <span className="font-semibold">
@@ -35,7 +35,7 @@ const HeroSection = () => {
           <div className="space-x-2">
             <Link
               to="projects"
-              className="font-bold prose-invert px-8 py-2.5 rounded shadow bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 hover:from-pink-500 hover:to-yellow-500"
+              className="font-bold prose-invert px-8 py-2.5 rounded shadow bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 transition ease-in-out delay-0 bg-white-500 hover:from-pink-500 hover:to-yellow-500"
               activeClass="active"
               spy={true}
               smooth={true}
@@ -44,12 +44,12 @@ const HeroSection = () => {
             >
               Projects
             </Link>
-            <button className="font-bold prose-invert px-8 py-2 rounded shadow bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 hover:from-pink-500 hover:to-yellow-500">
+            <button className="font-bold prose-invert px-8 py-2 rounded shadow bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 transition ease-in-out delay-0 bg-white-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300 hover:from-pink-500 hover:to-yellow-500">
               <a className="" href="https://github.com/sansquoi" rel="noreferrer" target="_blank">
                Github
               </a>
             </button>
-            <button className="font-bold prose-invert px-8 py-2 rounded shadow bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 hover:from-pink-500 hover:to-yellow-500">
+            <button className="font-bold prose-invert px-8 py-2 rounded shadow bg-gradient-to-tr from-red-900 via-blue-800 to-teal-900 transition ease-in-out delay-0 bg-white-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300 hover:from-pink-500 hover:to-yellow-500">
               <a className="" href="https://www.linkedin.com/in/mazumders/" rel="noreferrer" target="_blank">
                 LinkedIn
               </a>
