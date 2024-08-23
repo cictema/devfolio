@@ -1,11 +1,12 @@
 "use client" // this is a client component
 import React from "react"
 import { useState } from "react"
-import { Link } from "react-scroll/modules"
+import { Link as Scroll} from "react-scroll/modules"
 import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
+import Link from 'next/link'
 
 interface NavItem {
   label: string
@@ -14,20 +15,24 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "home",
-    page: "home",
+    label: "./home",
+    page: "/",
   },
   {
-    label: "about",
-    page: "about",
+    label: "./about",
+    page: "#about",
   },
   {
-    label: "projects",
-    page: "projects",
+    label: "./projects",
+    page: "#projects",
   },
   {
-    label: "design",
+    label: "./design",
     page: "designs"
+  },
+  {
+    label: "./blog",
+    page: "blog"
   }
 ]
 
@@ -41,11 +46,22 @@ export default function Navbar() {
       <div className="justify-between md:items-center md:flex bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 text-2xl bg-clip-text text-transparent">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="home">
+            {/* <Link to="home">
               <div className="container flex items-center space-x-2">
                 <h2 className="text-4xl font-bold hover:text-white">Sm.</h2>
               </div>
+            </Link> */}
+            <Link
+                  key={"home"}
+                  href={"/"}
+                  scroll={false}
+                  
+                >
+                  <div className="container flex items-center space-x-2">
+                <h2 className="text-4xl font-bold hover:text-white">Sm.</h2>
+              </div>
             </Link>
+            
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -64,40 +80,16 @@ export default function Navbar() {
             }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            
               {NAV_ITEMS.map((item, idx) => {
                 return (
                   <Link
                     key={idx}
-                    to={item.page}
-                    className={
-                      "text-2xl font-bold hover:text-white"
-                    }
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}
-                    onClick={() => setNavbar(!navbar)}
-                  >
-                    {item.label}
+                    href={item.page}>
+                    <p className="text-4xl font-bold hover:text-white">{item.label}</p>
                   </Link>
                 )
               })}
-              {/* {currentTheme === "dark" ? (
-                <button
-                  onClick={() => setTheme("light")}
-                  className="bg-white p-4 rounded-xl"
-                >
-                  <RiSunLine size={25} color="red" />
-                </button>
-              ) : (
-                <button
-                  onClick={() => setTheme("dark")}
-                  className="bg-slate-300 p-4 rounded-xl"
-                >
-                  <RiSunLine size={25} color="black" />
-                </button>
-              )} */}
             </div>
           </div>
         </div>

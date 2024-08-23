@@ -17,7 +17,7 @@ export default function RootLayout({
       */}
       <head />
       {/* <body className="bg-gradient-to-r from-blue-950 via-amber-950 to-blue-950">       */}
-      <body className="bg-gradient-to-tr from-blue-950 via-slate-950 to-blue-950 background-animate">    
+      <body className="bg-gradient-to-tr from-blue-950 via-slate-950 to-blue-950">    
           <ThemeProvider enableSystem={false} attribute="dark">          
             <Navbar />
             {children}
