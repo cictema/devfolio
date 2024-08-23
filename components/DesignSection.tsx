@@ -9,12 +9,12 @@ const designs = [
   {
     name: "UtahSec",
     description: "A logo for University of Utah's cybersecurity club.",
-    image: "/utahsec1.png",
+    image: "/design_section/utahsec1.png",
   },
   {
     name: "CTF Team",
     description: "A logo for University of Utah's official capture-the-flag team.",
-    image: "/utahsec3.png",
+    image: "/design_section/utahsec3.png",
   },
 ]
 

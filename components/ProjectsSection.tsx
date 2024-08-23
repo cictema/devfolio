@@ -8,7 +8,7 @@ const projects = [
     name: "NoShorts",
     description:
       "A Firefox Plugin that removes all YouTube Shorts elements from the search results.",
-    image: "/noshorts.png",
+    image: "/project_section/noshorts.png",
     github: "https://github.com/cictema/NoShorts",
     link: "https://addons.mozilla.org/en-US/firefox/addon/noytshorts/",
   },
@@ -16,14 +16,14 @@ const projects = [
     name: "Task Management Board",
     description:
       "A task management kanban board in React.",
-    image: "/trelloclone.png",
+    image: "/project_section/trelloclone.png",
     github: "https://github.com/cictema/trello-clone",
   },
   {
     name: "PlushCV",
     description:
       "A two-column one-page resume template with 71 stars and 25 forks on github.",
-    image: "/plushcv.png",
+    image: "/project_section/plushcv.png",
     github: "https://github.com/sansquoi/plushcv",
     link: "https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf",
   },
@@ -31,8 +31,8 @@ const projects = [
     name: "Anupam's Portfolio",
     description:
       "A friend's Academic Portfolio in Jekyll.",
-    image: "/anupamportfolio.png",
-    github: "https://github.com/sansquoi/plushcv",
+    image: "/project_section/anupamportfolio.png",
+    github: "https://github.com/sansquoi/anupam-portfolio",
     link: "https://cictema.github.io/anupam-portfolio/",
   },
 ]

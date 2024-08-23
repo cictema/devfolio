@@ -99,7 +99,7 @@ const AboutSection = () => {
               })}
             </div>
             <Image
-              src="/hero-image.svg"
+              src="/about_section/hero-image.svg"
               alt=""
               width={325}
               height={325}
