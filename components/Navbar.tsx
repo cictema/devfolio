@@ -83,21 +83,6 @@ export default function Navbar() {
                   </Link>
                 )
               })}
-              {/* {currentTheme === "dark" ? (
-                <button
-                  onClick={() => setTheme("light")}
-                  className="bg-white p-4 rounded-xl"
-                >
-                  <RiSunLine size={25} color="red" />
-                </button>
-              ) : (
-                <button
-                  onClick={() => setTheme("dark")}
-                  className="bg-slate-300 p-4 rounded-xl"
-                >
-                  <RiSunLine size={25} color="black" />
-                </button>
-              )} */}
             </div>
           </div>
         </div>

@@ -2,7 +2,6 @@
 import "../styles/globals.css"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
-import { ThemeProvider } from "next-themes"
 
 export default function RootLayout({
   children,
@@ -16,14 +15,10 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      {/* <body className="bg-gradient-to-r from-blue-950 via-amber-950 to-blue-950">       */}
-      <body className="bg-gradient-to-tr from-blue-950 via-slate-950 to-blue-950">    
-          <ThemeProvider enableSystem={false} attribute="dark">          
+      <body className="bg-gradient-to-tr from-blue-950 via-slate-950 to-neutral-950">    
             <Navbar />
             {children}
-            <Footer />            
-          </ThemeProvider>
-        
+            <Footer /> 
       </body>
     </html>
   )

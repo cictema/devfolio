@@ -33,13 +33,11 @@ const NAV_ITEMS: Array<NavItem> = [
 ]
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme()
-  const currentTheme = theme === "system" ? systemTheme : theme
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-gradient-to-r from-neutral-900 via-neutral-950 to-neutral-900 ">
-      <div className="justify-between md:items-center md:flex bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 text-2xl bg-clip-text text-transparent">
+    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-neutral-950">
+      <div className="justify-between md:items-center md:flex bg-red-600 text-2xl bg-clip-text text-transparent">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link
@@ -78,7 +76,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "text-4xl font-bold hover:text-white"
+                      "text-3xl font-bold hover:text-white"
                     }
                     activeClass="active"
                     spy={true}
@@ -91,11 +89,7 @@ export default function Navbar() {
                   </Scroll>
                 )
               })}
-              <Link
-                    key="blog"
-                    href="/blog">
-                    <p className="text-4xl font-bold hover:text-white">./blog</p>
-                  </Link>
+              
             </div>
           </div>
         </div>
