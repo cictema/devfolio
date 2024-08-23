@@ -28,9 +28,9 @@ const projects = [
     link: "https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf",
   },
   {
-    name: "Anupam's Portfolio",
+    name: "Academic Portfolio",
     description:
-      "A friend's Academic Portfolio in Jekyll.",
+      "Academic Portfolio in Jekyll, built for a friend.",
     image: "/project_section/anupamportfolio.png",
     github: "https://github.com/sansquoi/anupam-portfolio",
     link: "https://cictema.github.io/anupam-portfolio/",
