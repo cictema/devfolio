@@ -5,26 +5,40 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Mini Blockchain",
+    description:
+      "A miniature implementation of a Blockchain, using Python 3 and Flask.",
+    image: "/project_section/blockchain.png",
+    github: "https://github.com/cystema/mini-blockchain",
+  },
+  {
     name: "NoShorts",
     description:
       "A Firefox Plugin that removes all YouTube Shorts elements from the search results.",
     image: "/project_section/noshorts.png",
-    github: "https://github.com/cictema/NoShorts",
+    github: "https://github.com/cystema/NoShorts",
     link: "https://addons.mozilla.org/en-US/firefox/addon/noytshorts/",
+  },
+  {
+    name: "Rasa Chatbot",
+    description:
+      "A simple chatbot built with Rasa and Flask.",
+    image: "/project_section/rasa.png",
+    github: "https://github.com/cystema/rasa-project",
   },
   {
     name: "Task Management Board",
     description:
       "A task management kanban board in React.",
     image: "/project_section/trelloclone.png",
-    github: "https://github.com/cictema/trello-clone",
+    github: "https://github.com/cystema/trello-clone",
   },
   {
     name: "PlushCV",
     description:
       "A two-column one-page resume template with 71 stars and 25 forks on github.",
     image: "/project_section/plushcv.png",
-    github: "https://github.com/sansquoi/plushcv",
+    github: "https://github.com/cystema/plushcv",
     link: "https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf",
   },
   {
@@ -32,8 +46,8 @@ const projects = [
     description:
       "Academic Portfolio in Jekyll, built for a friend.",
     image: "/project_section/anupamportfolio.png",
-    github: "https://github.com/sansquoi/anupam-portfolio",
-    link: "https://cictema.github.io/anupam-portfolio/",
+    github: "https://github.com/cystema/anupam-portfolio",
+    link: "https://cystema.github.io/anupam-portfolio/",
   },
 ]
 
