@@ -5,6 +5,14 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Wordle",
+    description:
+      "An implementation of popular game Wordle, with NextJS. The game is fully responsive and can be played on any device.",
+    image: "/project_section/wordle.png",
+    github: "https://github.com/cystema/wordle",
+    link: "https://wordle.shubh.ink/",
+  },
+  {
     name: "Mini Blockchain",
     description:
       "A miniature implementation of a Blockchain, using Python 3 and Flask.",
