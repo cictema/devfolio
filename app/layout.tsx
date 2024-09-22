@@ -30,7 +30,7 @@ export default function RootLayout({
         <Footer />
 
         {/* Dialogflow Messenger Widget */}
-        <df-messenger
+        {/* <df-messenger
           location="us-central1"
           project-id="movieassistant-436221"
           agent-id="71df484e-6e15-4587-8d4c-07bd70af50ef"
@@ -38,7 +38,7 @@ export default function RootLayout({
           max-query-length="-1"
         >
           <df-messenger-chat-bubble chat-title="Movie Assistant"></df-messenger-chat-bubble>
-        </df-messenger>
+        </df-messenger> */}
         {/* Scripts */}
         <Script
           src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"
