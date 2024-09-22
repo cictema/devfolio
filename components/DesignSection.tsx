@@ -21,7 +21,7 @@ const designs = [
 const DesignSection = () => {
   return (
     <section id="designs">
-    <div className="my-9 pb-12 md:pt-16 md:pb-48">
+    <div className="my-9 pb-12 ">
       <h1 className="my-10 text-center font-bold text-4xl text-white">
         ./design
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>

@@ -1,7 +1,12 @@
 import React from "react"
 import Image from "next/image"
 
-const skills = [  
+const skills = [ 
+  { skill: "Conversation Design" },
+  { skill: "Chatbot Development" },
+  { skill: "Microsoft Bot Framework" },
+  { skill: "Rasa" },
+  { skill: "Dialogflow" }, 
   { skill: "Python" },
   { skill: "React" },
   { skill: "JavaScript" },
@@ -52,8 +57,7 @@ const AboutSection = () => {
                 Hi, my name is Shubham and I am a{" "}
                 <span className="font-bold">{"highly ambitious"}</span>,
                 <span className="font-bold">{" self-motivated"}</span>, and
-                <span className="font-bold">{" driven"}</span> software engineer
-                based in Salt Lake City, UT.
+                <span className="font-bold">{" driven"}</span> software engineer.
               </p>
               <br />
               <p>

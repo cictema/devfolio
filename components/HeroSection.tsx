@@ -26,11 +26,11 @@ const HeroSection = () => {
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl text-white">hi, i&#39;m</h1>
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl bg-red-600 bg-clip-text text-7xl text-transparent">shubham!</h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl text-white`">
-            i&#39;m a{" "}
+            i&#39;m a versatile{" "}
             <span className="font-semibold">
               software engineer{" "} 
             </span>
-            based in Salt Lake City, UT. working towards building software that empowers and inspires users.
+            working on Generative AI, Conversation Design, Full Stack Software Development, and HPC. working towards building software that empowers and inspires users.
           </p>
           <div className="space-x-2">
             <Link
