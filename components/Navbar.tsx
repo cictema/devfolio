@@ -70,7 +70,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "text-2xl font-bold hover:text-white"
+                      "text-2xl font-bold underline1 "
                     }
                     activeClass="active"
                     spy={true}

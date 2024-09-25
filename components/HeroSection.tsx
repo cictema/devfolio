@@ -26,11 +26,24 @@ const HeroSection = () => {
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl text-white">hi, i&#39;m</h1>
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl bg-red-600 bg-clip-text text-7xl text-transparent">shubham!</h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl text-white`">
-            i&#39;m a versatile{" "}
-            <span className="font-semibold">
-              software engineer{" "} 
+            I&#39;m a versatile{" "}
+            <span className="font-semibold bg-gradient-to-tr from-red-500 via-yellow-400 to-red-400 bg-clip-text text-transparent background-animate">
+              Conversational AI Engineer{" "} 
+            </span> and 
+            <span className="font-semibold bg-gradient-to-tr from-red-500 via-yellow-400 to-red-400 bg-clip-text text-transparent background-animate">
+              {" "} Software Developer{" "} 
             </span>
-            working on Generative AI, Conversation Design, Full Stack Software Development, and HPC. working towards building software that empowers and inspires users.
+            working on <span className="font-color:yellow font-semibold underline2">
+              {" "} Generative AI
+            </span>{", "}  <span className="font-semibold underline2">
+              {" "} Conversation Design
+            </span>{", "}  
+            <span className="font-semibold underline2">
+              {" "} Full Stack Software Development
+              </span>
+              {", "}  and <span className="font-semibold underline2">
+              {" "} HPC {" "} 
+            </span>. Working towards building software that empowers and inspires users.
           </p>
           <div className="space-x-2">
             <Link
