@@ -18,6 +18,7 @@ const projects = [
       "AI-powered application that allows interactions with PDF documents and provides intelligent responses in a conversational format using RAG, Langchain, OpenAI, and HuggingFace.",
     image: "/project_section/pdfassistant.png",
     github: "https://github.com/cystema/pdf-reader-langchain-streamlit",
+    link: "https://pdf-insight-engine-langchain.streamlit.app/"
   },
   {
     name: "Wordle",
