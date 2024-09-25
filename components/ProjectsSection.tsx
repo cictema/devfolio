@@ -5,6 +5,14 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "MovieAssistant",
+    description:
+      "Conversational chatbot leveraging generative AI and NLP to provide personalized movie recommendations based on user preferences.",
+    image: "/project_section/movieassisstant.png",
+    github: "https://github.com/cystema/movieassistant",
+    link: "https://sites.google.com/view/movieassistant/home",
+  },
+  {
     name: "Wordle",
     description:
       "An implementation of popular game Wordle, with NextJS. The game is fully responsive and can be played on any device.",
