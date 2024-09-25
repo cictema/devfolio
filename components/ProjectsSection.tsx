@@ -28,6 +28,13 @@ const projects = [
     github: "https://github.com/cystema/mini-blockchain",
   },
   {
+    name: "RAG + Langchain",
+    description:
+      "Walks through the process of integrating Google’s Gemini API with LangChain to create a Retrieval-Augmented Generation (RAG) system for querying PDFs.",
+    image: "/project_section/rag_langchain.png",
+    github: "https://github.com/cystema/rag-with-langchain",
+  },
+  {
     name: "NoShorts",
     description:
       "A Firefox Plugin that removes all YouTube Shorts elements from the search results.",
