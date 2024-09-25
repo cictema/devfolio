@@ -8,7 +8,7 @@ const projects = [
     name: "MovieAssistant",
     description:
       "Conversational chatbot leveraging generative AI and NLP to provide personalized movie recommendations based on user preferences.",
-    image: "/project_section/movieassisstant.png",
+    image: "/project_section/movieassistant.png",
     github: "https://github.com/cystema/movieassistant",
     link: "https://sites.google.com/view/movieassistant/home",
   },
