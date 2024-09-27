@@ -5,6 +5,13 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "WikiLam",
+    description:
+      "Conversational Wikipedia query tool that leverages LlamaIndex, Chainlit, and OpenAI GPT to help you query and interact with indexed Wikipedia pages in a conversational manner.",
+    image: "/project_section/wikilam.png",
+    github: "https://github.com/cystema/wikilam",
+  },
+  {
     name: "MovieAssistant",
     description:
       "Conversational chatbot leveraging generative AI and NLP to provide personalized movie recommendations based on user preferences.",
