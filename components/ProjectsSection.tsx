@@ -5,7 +5,7 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const other_projects = [
   {
-    name: "Mini Blockchain",
+    name: "Mini-Blockchain",
     description:
       "A miniature implementation of a Blockchain, using Python 3 and Flask.",
     image: "/project_section/blockchain.png",
@@ -30,7 +30,7 @@ const other_projects = [
 ]
 
 const conversational_ai_projects = [{
-  name: "CSV AI",
+  name: "Insight Engine: CSV AI ",
   description:
     "Interactive conversational tool that leverages LangChain, HoloViz Panel, and OpenAI GPT to empower users to seamlessly upload, query, and interact with their CSV data. ",
   image: "/project_section/csvai.png",
@@ -38,14 +38,7 @@ const conversational_ai_projects = [{
   link: "https://tight-water-9718.ploomberapp.io/app"
 },
 {
-  name: "WikiLam",
-  description:
-    "Conversational Wikipedia query tool that leverages LlamaIndex, Chainlit, and OpenAI GPT to help you query and interact with indexed Wikipedia pages in a conversational manner.",
-  image: "/project_section/wikilam.png",
-  github: "https://github.com/cystema/wikilam",
-},
-{
-  name: "MovieAssistant",
+  name: "Movie AI Assistant",
   description:
     "Conversational chatbot leveraging generative AI and NLP to provide personalized movie recommendations based on user preferences.",
   image: "/project_section/movieassistant.png",
@@ -53,12 +46,19 @@ const conversational_ai_projects = [{
   link: "https://sites.google.com/view/movieassistant/home",
 },
 {
-  name: "AI-Powered Insight Engine for PDFs",
+  name: "Insight Engine: PDF AI",
   description:
     "AI-powered application that allows interactions with PDF documents and provides intelligent responses in a conversational format using RAG, Langchain, OpenAI, and HuggingFace.",
   image: "/project_section/pdfassistant.png",
   github: "https://github.com/cystema/pdf-reader-langchain-streamlit",
   link: "https://pdf-insight-engine-langchain.streamlit.app/"
+},
+{
+  name: "WikiLam: Wiki AI",
+  description:
+    "Conversational Wikipedia query tool that leverages LlamaIndex, Chainlit, and OpenAI GPT to help you query and interact with indexed Wikipedia pages in a conversational manner.",
+  image: "/project_section/wikilam.png",
+  github: "https://github.com/cystema/wikilam",
 },
 {
   name: "RAG + Langchain",

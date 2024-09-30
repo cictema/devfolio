@@ -32,8 +32,8 @@ const NAV_ITEMS: Array<NavItem> = [
 ]
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme()
-  const currentTheme = theme === "system" ? systemTheme : theme
+  // const { systemTheme, theme, setTheme } = useTheme()
+  // const currentTheme = theme === "system" ? systemTheme : theme
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
@@ -59,9 +59,8 @@ export default function Navbar() {
 
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+              }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {

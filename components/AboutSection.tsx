@@ -41,7 +41,7 @@ const skills = [
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="my-9 pb-12">
+      <div className="flex flex-col text-center items-center justify-center">
         <h1 className="my-10 text-center font-bold text-4xl text-white">
           <div className="flex items-center justify-center">
             {/* <span className="underline3">about me </span> */}
