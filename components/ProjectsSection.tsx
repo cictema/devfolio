@@ -5,6 +5,14 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "CSV AI",
+    description:
+      "Interactive conversational tool that leverages LangChain, HoloViz Panel, and OpenAI GPT to empower users to seamlessly upload, query, and interact with their CSV data. ",
+    image: "/project_section/csvai.png",
+    github: "https://github.com/cystema/langchain-panel-csv-query",
+    link: "https://tight-water-9718.ploomberapp.io/app"
+  },
+  {
     name: "WikiLam",
     description:
       "Conversational Wikipedia query tool that leverages LlamaIndex, Chainlit, and OpenAI GPT to help you query and interact with indexed Wikipedia pages in a conversational manner.",
@@ -57,7 +65,7 @@ const projects = [
     github: "https://github.com/cystema/rasa-project",
   },
   {
-    name: "ChatGPT Markdown Copy",
+    name: "GPT-Copy",
     description:
       "A Firefox Plugin that allows you to copy ChatGPT output with the click of a button.",
     image: "/project_section/chatgptcopy.png",
@@ -70,13 +78,6 @@ const projects = [
     image: "/project_section/noshorts.png",
     github: "https://github.com/cystema/NoShorts",
     link: "https://addons.mozilla.org/en-US/firefox/addon/noytshorts/",
-  },
-  {
-    name: "Task Management Board",
-    description:
-      "A task management kanban board in React.",
-    image: "/project_section/trelloclone.png",
-    github: "https://github.com/cystema/trello-clone",
   },
   {
     name: "PlushCV",
@@ -117,7 +118,7 @@ const ProjectsSection = () => {
                         alt=""
                         width={1000}
                         height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-70 shadow-2xl"
+                        className="rounded-xl shadow-xl hover:opacity-70 shadow-2xl object-cover"
                       />
                     </Link>
                   </div>
