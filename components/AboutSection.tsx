@@ -1,12 +1,12 @@
 import React from "react"
 import Image from "next/image"
 
-const skills = [ 
+const skills = [
   { skill: "Conversation Design" },
   { skill: "Chatbot Development" },
   { skill: "Microsoft Bot Framework" },
   { skill: "Rasa" },
-  { skill: "Dialogflow" }, 
+  { skill: "Dialogflow" },
   { skill: "Python" },
   { skill: "React" },
   { skill: "JavaScript" },
@@ -42,9 +42,14 @@ const AboutSection = () => {
   return (
     <section id="about">
       <div className="my-9 pb-12">
-        <h1 className="text-center font-bold text-4xl text-white">
-          ./aboutme 
-          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+        <h1 className="my-10 text-center font-bold text-4xl text-white">
+          <div className="flex items-center justify-center">
+            {/* <span className="underline3">about me </span> */}
+            <span className="text-4xl font-semibold bg-gradient-to-tr from-red-500 via-yellow-400 to-red-400 bg-clip-text text-transparent background-animate">
+              About Me
+            </span>
+          </div>
+          <hr className="w-6 h-1 mx-auto my-4 bg-gray-100 border-0 rounded"></hr>
         </h1>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
@@ -61,19 +66,19 @@ const AboutSection = () => {
               </p>
               <br />
               <p>
-              I graduated from the University of Utah in 2024 with an MS in Computer Science, 
-              where I had the privilege of working as a Research Assistant under 
-              Prof. Mu Zhang, focusing on Computer Security. 
-              Before that, I spent around 4 years honing my skills as a Full Stack Software Developer.
+                I graduated from the University of Utah in 2024 with an MS in Computer Science,
+                where I had the privilege of working as a Research Assistant under
+                Prof. Mu Zhang, focusing on Computer Security.
+                Before that, I spent around 4 years honing my skills as a Full Stack Software Developer.
 
               </p>
               <br />
               <p>
-              I thrive on learning new things and constantly expanding my knowledge. 
-              I have a keen eye for design and detail, which drives me to create 
-              visually appealing and user-friendly applications.
-              I am always looking for ways to improve, both personally and professionally, 
-              embracing every challenge as an opportunity to grow.
+                I thrive on learning new things and constantly expanding my knowledge.
+                I have a keen eye for design and detail, which drives me to create
+                visually appealing and user-friendly applications.
+                I am always looking for ways to improve, both personally and professionally,
+                embracing every challenge as an opportunity to grow.
               </p>
               <br />
               <p>
@@ -83,7 +88,7 @@ const AboutSection = () => {
                 </span>{" "}
                 and that&#39;s what I aim for. With a deep passion for
                 technology and an eagerness to expand the boundaries of possibility,
-                I&apos;m excited about the future of my career 
+                I&apos;m excited about the future of my career
                 and am always on the lookout for new and exciting opportunities. 🙂
               </p>
             </div>
