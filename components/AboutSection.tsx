@@ -2,6 +2,10 @@ import React from "react"
 import Image from "next/image"
 
 const skills = [
+  { skill: "Retrieval-Augmented Generation" },
+  { skill: "LangChain" },
+  { skill: "Langflow" },
+  { skill: "Vector Databases" },
   { skill: "Conversation Design" },
   { skill: "Chatbot Development" },
   { skill: "Microsoft Bot Framework" },
@@ -17,7 +21,7 @@ const skills = [
   { skill: "C" },
   { skill: "Linux" },
   { skill: "SQL" },
-  { skill: ".NET Framework" },
+  { skill: ".NET" },
   { skill: "Node.js" },
   { skill: "Next.js" },
   { skill: "Django" },
@@ -66,19 +70,7 @@ const AboutSection = () => {
               </p>
               <br />
               <p>
-                I graduated from the University of Utah in 2024 with an MS in Computer Science,
-                where I had the privilege of working as a Research Assistant under
-                Prof. Mu Zhang, focusing on Computer Security.
-                Before that, I spent around 4 years honing my skills as a Full Stack Software Developer.
-
-              </p>
-              <br />
-              <p>
-                I thrive on learning new things and constantly expanding my knowledge.
-                I have a keen eye for design and detail, which drives me to create
-                visually appealing and user-friendly applications.
-                I am always looking for ways to improve, both personally and professionally,
-                embracing every challenge as an opportunity to grow.
+                Currently, I’m expanding my expertise in Conversational AI. At Cantonica, I’m developing cutting-edge chatbots using Retrieval-Augmented Generation (RAG) for PWA marketplaces. This work involves conversation design and creating intelligent systems that provide dynamic, real-time responses, enhancing user engagement and interaction. My experience in conversation design allows me to craft smooth, intuitive interactions, ensuring users have a seamless experience with the chatbot interfaces.
               </p>
               <br />
               <p>
@@ -100,8 +92,9 @@ const AboutSection = () => {
                 return (
                   <p
                     key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-700 rounded font-bold prose-invert bg-white transition ease-in-out delay-0 bg-white-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300"
+                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-700 rounded font-bold prose-invert bg-white transition ease-in-out delay-0 bg-white-500 "
                   >
+                    {/* hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300 */}
                     {item.skill}
                   </p>
                 )

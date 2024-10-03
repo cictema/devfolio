@@ -29,51 +29,67 @@ const other_projects = [
   },
 ]
 
-const conversational_ai_projects = [{
-  name: "Insight Engine: CSV AI ",
-  description:
-    "Interactive conversational tool that leverages LangChain, HoloViz Panel, and OpenAI GPT to empower users to seamlessly upload, query, and interact with their CSV data. ",
-  image: "/project_section/csvai.png",
-  github: "https://github.com/cystema/langchain-panel-csv-query",
-  link: "https://tight-water-9718.ploomberapp.io/app"
-},
-{
-  name: "Movie AI Assistant",
-  description:
-    "Conversational chatbot leveraging generative AI and NLP to provide personalized movie recommendations based on user preferences.",
-  image: "/project_section/movieassistant.png",
-  github: "https://github.com/cystema/movieassistant",
-  link: "https://sites.google.com/view/movieassistant/home",
-},
-{
-  name: "Insight Engine: PDF AI",
-  description:
-    "AI-powered application that allows interactions with PDF documents and provides intelligent responses in a conversational format using RAG, Langchain, OpenAI, and HuggingFace.",
-  image: "/project_section/pdfassistant.png",
-  github: "https://github.com/cystema/pdf-reader-langchain-streamlit",
-  link: "https://pdf-insight-engine-langchain.streamlit.app/"
-},
-{
-  name: "WikiLam: Wiki AI",
-  description:
-    "Conversational Wikipedia query tool that leverages LlamaIndex, Chainlit, and OpenAI GPT to help you query and interact with indexed Wikipedia pages in a conversational manner.",
-  image: "/project_section/wikilam.png",
-  github: "https://github.com/cystema/wikilam",
-},
-{
-  name: "RAG + Langchain",
-  description:
-    "Walks through the process of integrating Google’s Gemini API with LangChain to create a Retrieval-Augmented Generation (RAG) system for querying PDFs.",
-  image: "/project_section/rag_langchain.png",
-  github: "https://github.com/cystema/rag-with-langchain",
-},
-{
-  name: "Rasa Chatbot",
-  description:
-    "A simple chatbot built with Rasa and Flask.",
-  image: "/project_section/rasa.png",
-  github: "https://github.com/cystema/rasa-project",
-},
+const conversational_ai_projects = [
+  {
+    name: "MovieLang AI: Movies with Langflow",
+    description:
+      "Conversational AI tool powered by LangChain, Langflow, AstraDB, RAG, and GPT, offering seamless, intelligent movie recommendations through real-time data retrieval.",
+    image: "/project_section/movielangai.png",
+    github: "https://github.com/cystema/movielang-ai",
+    link: "https://movielang.shubh.ink/"
+  },
+  {
+    name: "OpenAPI Hierarchical Planning Agent",
+    description:
+      "Hierarchical API Planner using LangChain and the OpenAPI Toolkit to intelligently navigate and consume an API spec, determining and calling endpoints sequentially based on complex user queries.",
+    image: "/project_section/hpa.png",
+    github: "https://github.com/cystema/langchain-openapi-tmdb",
+  },
+  {
+    name: "Insight Engine: CSV AI ",
+    description:
+      "Interactive conversational tool that leverages LangChain, HoloViz Panel, and OpenAI GPT to empower users to seamlessly upload, query, and interact with their CSV data. ",
+    image: "/project_section/csvai.png",
+    github: "https://github.com/cystema/langchain-panel-csv-query",
+    link: "https://tight-water-9718.ploomberapp.io/app"
+  },
+  {
+    name: "Movie AI Assistant",
+    description:
+      "Conversational chatbot leveraging Dialogflow and Gen AI to provide personalized movie recommendations based on user queries.",
+    image: "/project_section/movieassistant.png",
+    github: "https://github.com/cystema/movieassistant",
+    link: "https://sites.google.com/view/movieassistant/home",
+  },
+  {
+    name: "Insight Engine: PDF AI",
+    description:
+      "AI-powered application that allows interactions with PDF documents and provides intelligent responses in a conversational format using RAG, Langchain, OpenAI, and HuggingFace.",
+    image: "/project_section/pdfassistant.png",
+    github: "https://github.com/cystema/pdf-reader-langchain-streamlit",
+    link: "https://pdf-insight-engine-langchain.streamlit.app/"
+  },
+  {
+    name: "WikiLam: Wiki AI",
+    description:
+      "Conversational Wikipedia query tool that leverages LlamaIndex, Chainlit, and OpenAI GPT to help you query and interact with indexed Wikipedia pages in a conversational manner.",
+    image: "/project_section/wikilam.png",
+    github: "https://github.com/cystema/wikilam",
+  },
+  {
+    name: "RAG + Langchain",
+    description:
+      "Walks through the process of integrating Google’s Gemini API with LangChain to create a Retrieval-Augmented Generation (RAG) system for querying PDFs.",
+    image: "/project_section/rag_langchain.png",
+    github: "https://github.com/cystema/rag-with-langchain",
+  },
+  {
+    name: "Rasa Chatbot",
+    description:
+      "A simple chatbot built with Rasa and Flask.",
+    image: "/project_section/rasa.png",
+    github: "https://github.com/cystema/rasa-project",
+  },
 ]
 
 const web_projects = [
@@ -226,7 +242,7 @@ const ProjectsSection = () => {
           <div className="flex flex-row gap-4 flex-wrap justify-center">
             {conversational_ai_projects.map((project, idx) => {
               return (
-                <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow bg-white">
+                <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow bg-gradient-to-br from-gray-100 via-blue-200 to-gray-100">
                   <div className="">
                     <Link href={project.github}>
                       <Image
@@ -281,7 +297,7 @@ const ProjectsSection = () => {
           <div className="flex flex-row gap-4 flex-wrap justify-center">
             {web_projects.map((project, idx) => {
               return (
-                <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow bg-white">
+                <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow bg-gradient-to-br from-gray-100 via-purple-200 to-gray-100">
                   <div className="">
                     <Link href={project.github}>
                       <Image
