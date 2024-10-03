@@ -2,6 +2,8 @@
 import React from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
+import { Link as Scroll } from "react-scroll/modules"
+
 import { HiArrowDown } from "react-icons/hi"
 import {
   AiOutlineGithub,
@@ -35,14 +37,49 @@ const HeroSection = () => {
               <span className="font-semibold bg-gradient-to-tr from-red-500 via-yellow-400 to-red-400 bg-clip-text text-transparent background-animate">
                 {" "} Software Developer{" "}
               </span>
-              working on <span className="font-color:yellow font-semibold underline2">
-                {" "} Generative AI
-              </span>{", "}  <span className="font-semibold underline2">
-                {" "} Conversation Design
-              </span>{", "}
-              <span className="font-semibold underline2">
-                {" "} Full Stack Software Development
-              </span>
+              working on
+              <Scroll
+                // key={idx}
+                to="conversational_ai_projects"
+                className={
+                  ""
+                }
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                // offset={-100}
+                duration={500}
+              >
+                {/* {item.label} */}
+                <span className="font-color:yellow font-semibold underline2">
+                  {" "} Generative AI
+                </span>
+              </Scroll>
+              {", "}
+              <Scroll
+                to="conv_design"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                {/* {item.label} */}
+                <span className="font-color:yellow font-semibold underline2">
+                  {" "} Conversation Design
+                </span>
+              </Scroll>{", "}
+              <Scroll
+                to="web_projects"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                {/* {item.label} */}
+                <span className="font-color:yellow font-semibold underline2">
+                  {" "} Full Stack Software Development
+                </span>
+              </Scroll>
               {", "}  and <span className="font-semibold underline2">
                 {" "} HPC {" "}
               </span>. Working towards building software that empowers and inspires users.

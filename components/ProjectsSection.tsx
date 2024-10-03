@@ -39,7 +39,7 @@ const conversational_ai_projects = [
     link: "https://movielang.shubh.ink/"
   },
   {
-    name: "OpenAPI Hierarchical Planning Agent",
+    name: "Langchain Hierarchical Planning Agent",
     description:
       "Hierarchical API Planner using LangChain and the OpenAPI Toolkit to intelligently navigate and consume an API spec, determining and calling endpoints sequentially based on complex user queries.",
     image: "/project_section/hpa.png",
@@ -119,101 +119,6 @@ const web_projects = [
 
 ]
 
-
-const projects = [
-  {
-    name: "CSV AI",
-    description:
-      "Interactive conversational tool that leverages LangChain, HoloViz Panel, and OpenAI GPT to empower users to seamlessly upload, query, and interact with their CSV data. ",
-    image: "/project_section/csvai.png",
-    github: "https://github.com/cystema/langchain-panel-csv-query",
-    link: "https://tight-water-9718.ploomberapp.io/app"
-  },
-  {
-    name: "WikiLam",
-    description:
-      "Conversational Wikipedia query tool that leverages LlamaIndex, Chainlit, and OpenAI GPT to help you query and interact with indexed Wikipedia pages in a conversational manner.",
-    image: "/project_section/wikilam.png",
-    github: "https://github.com/cystema/wikilam",
-  },
-  {
-    name: "MovieAssistant",
-    description:
-      "Conversational chatbot leveraging generative AI and NLP to provide personalized movie recommendations based on user preferences.",
-    image: "/project_section/movieassistant.png",
-    github: "https://github.com/cystema/movieassistant",
-    link: "https://sites.google.com/view/movieassistant/home",
-  },
-  {
-    name: "AI-Powered Insight Engine for PDFs",
-    description:
-      "AI-powered application that allows interactions with PDF documents and provides intelligent responses in a conversational format using RAG, Langchain, OpenAI, and HuggingFace.",
-    image: "/project_section/pdfassistant.png",
-    github: "https://github.com/cystema/pdf-reader-langchain-streamlit",
-    link: "https://pdf-insight-engine-langchain.streamlit.app/"
-  },
-  {
-    name: "Wordle",
-    description:
-      "An implementation of popular game Wordle, with NextJS. The game is fully responsive and can be played on any device.",
-    image: "/project_section/wordle.png",
-    github: "https://github.com/cystema/wordle",
-    link: "https://wordle.shubh.ink/",
-  },
-  {
-    name: "Mini Blockchain",
-    description:
-      "A miniature implementation of a Blockchain, using Python 3 and Flask.",
-    image: "/project_section/blockchain.png",
-    github: "https://github.com/cystema/mini-blockchain",
-  },
-  {
-    name: "RAG + Langchain",
-    description:
-      "Walks through the process of integrating Google’s Gemini API with LangChain to create a Retrieval-Augmented Generation (RAG) system for querying PDFs.",
-    image: "/project_section/rag_langchain.png",
-    github: "https://github.com/cystema/rag-with-langchain",
-  },
-  {
-    name: "Rasa Chatbot",
-    description:
-      "A simple chatbot built with Rasa and Flask.",
-    image: "/project_section/rasa.png",
-    github: "https://github.com/cystema/rasa-project",
-  },
-  {
-    name: "GPT-Copy",
-    description:
-      "A Firefox Plugin that allows you to copy ChatGPT output with the click of a button.",
-    image: "/project_section/chatgptcopy.png",
-    github: "https://github.com/cystema/chatgpt-copy",
-  },
-  {
-    name: "NoShorts",
-    description:
-      "A Firefox Plugin that removes all YouTube Shorts elements from the search results.",
-    image: "/project_section/noshorts.png",
-    github: "https://github.com/cystema/NoShorts",
-    link: "https://addons.mozilla.org/en-US/firefox/addon/noytshorts/",
-  },
-  {
-    name: "PlushCV",
-    description:
-      "A two-column one-page resume template with 71 stars and 25 forks on github.",
-    image: "/project_section/plushcv.png",
-    github: "https://github.com/cystema/plushcv",
-    link: "https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf",
-  },
-  {
-    name: "Academic Portfolio",
-    description:
-      "Academic Portfolio in Jekyll, built for a friend.",
-    image: "/project_section/anupamportfolio.png",
-    github: "https://github.com/cystema/anupam-portfolio",
-    link: "https://cystema.github.io/anupam-portfolio/",
-  },
-]
-
 const ProjectsSection = () => {
   return (
     <section id="projects">
@@ -230,7 +135,7 @@ const ProjectsSection = () => {
 
 
         <h1 className="my-10 text-center text-3xl text-white">
-          <div className="flex items-center justify-center">
+          <div id="conversational_ai_projects" className="flex items-center justify-center">
             <span className="underline2">
               Conversational AI Projects
             </span>
@@ -264,7 +169,7 @@ const ProjectsSection = () => {
                         </svg>
                       </Link>
                       {project.link && (
-                        <Link href={project.link} className="font-bold inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-tr from-blue-900 via-blue-800 to-blue-800 rounded-lg  hover:-translate-y-1 hover:scale-110 hover:bg-red-600 duration-300 hover:from-pink-500 hover:to-red-600" target="_blank">
+                        <Link href={project.link} className="font-bold inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-tr from-red-600 via-blue-800 to-red-600 rounded-lg  hover:-translate-y-1 hover:scale-110 hover:bg-red-600 duration-300 hover:from-pink-500 hover:to-red-600" target="_blank">
                           <p className=""> Visit</p>
                           <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -285,7 +190,7 @@ const ProjectsSection = () => {
         <hr className="w-10 h-1 mx-auto my-4 bg-gray-100 border-0 rounded"></hr>
 
         <h1 className="my-10 text-center text-3xl text-white">
-          <div className="flex items-center justify-center">
+          <div id="web_projects" className="flex items-center justify-center">
             <span className="underline2">
               Web Projects
             </span>
@@ -319,7 +224,7 @@ const ProjectsSection = () => {
                         </svg>
                       </Link>
                       {project.link && (
-                        <Link href={project.link} className="font-bold inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-tr from-blue-900 via-blue-800 to-blue-800 rounded-lg  hover:-translate-y-1 hover:scale-110 hover:bg-red-600 duration-300 hover:from-pink-500 hover:to-red-600" target="_blank">
+                        <Link href={project.link} className="font-bold inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-tr from-red-600 via-blue-800 to-red-600 rounded-lg  hover:-translate-y-1 hover:scale-110 hover:bg-red-600 duration-300 hover:from-pink-500 hover:to-red-600" target="_blank">
                           <p className=""> Visit</p>
                           <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -340,7 +245,7 @@ const ProjectsSection = () => {
         <hr className="w-10 h-1 mx-auto my-4 bg-gray-100 border-0 rounded"></hr>
 
         <h1 className="my-10 text-center text-3xl text-white">
-          <div className="flex items-center justify-center">
+          <div id="other_projects" className="flex items-center justify-center">
             <span className="underline2">
               Other Projects
             </span>
