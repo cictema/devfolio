@@ -242,7 +242,7 @@ const ProjectsSection = () => {
           <div className="flex flex-row gap-4 flex-wrap justify-center">
             {conversational_ai_projects.map((project, idx) => {
               return (
-                <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow bg-gradient-to-br from-gray-100 via-blue-200 to-gray-100">
+                <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 border-solid border-4  border-gray-900 rounded-lg shadow bg-white">
                   <div className="">
                     <Link href={project.github}>
                       <Image
@@ -282,7 +282,7 @@ const ProjectsSection = () => {
           </div>
         </div>
 
-
+        <hr className="w-10 h-1 mx-auto my-4 bg-gray-100 border-0 rounded"></hr>
 
         <h1 className="my-10 text-center text-3xl text-white">
           <div className="flex items-center justify-center">
@@ -297,7 +297,7 @@ const ProjectsSection = () => {
           <div className="flex flex-row gap-4 flex-wrap justify-center">
             {web_projects.map((project, idx) => {
               return (
-                <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow bg-gradient-to-br from-gray-100 via-purple-200 to-gray-100">
+                <div key={idx} className="sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow bg-white">
                   <div className="">
                     <Link href={project.github}>
                       <Image
@@ -336,6 +336,8 @@ const ProjectsSection = () => {
             })}
           </div>
         </div>
+
+        <hr className="w-10 h-1 mx-auto my-4 bg-gray-100 border-0 rounded"></hr>
 
         <h1 className="my-10 text-center text-3xl text-white">
           <div className="flex items-center justify-center">
